@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="38" viewBox="0 0 48 38">
+  <g id="icon-latency" transform="translate(1 1)">
+    <rect id="Rectangle-path" width="6" height="12" rx="0.5" stroke-width="2" transform="translate(0 24)" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none"/>
+    <rect id="Rectangle-path-2" data-name="Rectangle-path" width="6" height="18" rx="0.5" transform="translate(10 18)" stroke-width="2" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none"/>
+    <rect id="Rectangle-path-3" data-name="Rectangle-path" width="6" height="24" rx="0.5" transform="translate(20 12)" stroke-width="2" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none"/>
+    <rect id="Rectangle-path-4" data-name="Rectangle-path" width="6" height="30" rx="0.5" transform="translate(30 6)" stroke-width="2" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none"/>
+    <rect id="Rectangle-path-5" data-name="Rectangle-path" width="6" height="36" rx="0.5" transform="translate(40)" stroke-width="2" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none"/>
+  </g>
+</svg>

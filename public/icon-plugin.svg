@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="47.996" height="40.832" viewBox="0 0 47.996 40.832">
+  <g id="icon-plugin" transform="translate(0 1)">
+    <ellipse id="Oval" cx="6" cy="3" rx="6" ry="3" stroke-width="2" transform="translate(18 12)" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none"/>
+    <ellipse id="Oval-2" data-name="Oval" cx="6" cy="3" rx="6" ry="3" transform="translate(18)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <ellipse id="Oval-3" data-name="Oval" cx="6" cy="3" rx="6" ry="3" transform="translate(32 6)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <ellipse id="Oval-4" data-name="Oval" cx="6" cy="3" rx="6" ry="3" transform="translate(5 6)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Shape" d="M4.31,0,0,1.874" transform="translate(15.164 4.968)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Shape-2" data-name="Shape" d="M4.866,2.116,0,0" transform="translate(28.522 4.966)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Shape-3" data-name="Shape" d="M5.148,0,1.2,1.716A2,2,0,0,0,0,3.55v13.4a2,2,0,0,0,1.172,1.82L21.2,27.878a2,2,0,0,0,1.6.026L44.766,18.75A2,2,0,0,0,46,16.9V3.55a2,2,0,0,0-1.2-1.834L41.4.238" transform="translate(1 10.762)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Shape-4" data-name="Shape" d="M0,0V15.816" transform="translate(23 23)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Shape-5" data-name="Shape" d="M23.63,0,0,9.846" transform="translate(23 13.154)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Shape-6" data-name="Shape" d="M21.638,9.836,0,0" transform="translate(1.362 13.164)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+</svg>
