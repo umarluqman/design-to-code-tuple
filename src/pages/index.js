@@ -19,9 +19,18 @@ import Latency from "../../public/icon-latency.svg";
 import Control from "../../public/icon-control.svg";
 import { jsx } from "@emotion/core";
 import useMedia from "use-media";
+import { useState } from "react";
 
 const Index = () => {
   const xs = useMedia({ minWidth: "40em" });
+
+  const [email, setEmail] = useState("");
+
+  const handleEmail = e => {
+    setEmail(e.target.event);
+  };
+
+  console.log("render");
 
   return (
     <Box>
@@ -107,7 +116,12 @@ const Index = () => {
             color={"transparent"}
             mt={16}
           >
-            <Input placeholder="umarluqman.78@gmail.com" />
+            <Input
+              placeholder="umarluqman.78@gmail.com"
+              onChange={handleEmail}
+              value={email}
+              css={{ color: "black" }}
+            />
             {xs ? (
               <InputRightElement width="max-content">
                 <Button
