@@ -1,6 +1,6 @@
 # Design to code series
 
-### From Sketch file to Next.JS static HTML
+### From Sketch file to a responsive Next.JS static HTML site
 
 This is inspired by Steve Schoger [Youtube video](https://youtu.be/RC9cYdbQ-_c) where he shared how he refactored this website. https://tuple.app
 
