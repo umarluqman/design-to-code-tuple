@@ -9,7 +9,8 @@ import {
   InputRightElement,
   InputGroup,
   Button,
-  Grid
+  Grid,
+  SimpleGrid
 } from "@chakra-ui/core";
 import Logo from "../../public/tuple-logo.svg";
 import CommandLine from "../../public/icon-command-line.svg";
@@ -17,18 +18,11 @@ import Plugin from "../../public/icon-plugin.svg";
 import Latency from "../../public/icon-latency.svg";
 import Control from "../../public/icon-control.svg";
 import { jsx } from "@emotion/core";
-import { useMediaPredicate } from "react-media-hook";
+import useMedia from "use-media";
 
-const Index = props => {
-  console.log("props", props);
+const Index = () => {
+  const xs = useMedia({ minWidth: "40em" });
 
-  const {
-    theme: {
-      colors: { current, transparent },
-      breakpoints
-    }
-  } = props;
-  const xs = useMediaPredicate(`(min-width: ${breakpoints[0]})`);
   return (
     <Box>
       <Flex
@@ -39,7 +33,7 @@ const Index = props => {
         pb={20}
         px={8}
       >
-        <Box maxWidth="54rem">
+        <Box maxWidth="54rem" pr={xs ? 40 : undefined}>
           <Box pt={12} pb={6}>
             <Logo></Logo>
           </Box>
@@ -104,34 +98,18 @@ const Index = props => {
             If your sick of pairing over Skype or Hangouts give us your email
             and we’ll let you know when Tuple is ready
           </Text>
-          <Box w={{ xs: "100%" }}>
-            <InputGroup
-              size="lg"
-              boxShadow={xs ? "0px 15px 35px #1A233F1A;" : "none"}
-              mt={"5rem"}
-              width="inherit"
-              flexDirection={{ lg: "row", xs: "column" }}
-              backgroundColor={transparent}
-              color={transparent}
-            >
-              <Input placeholder="umarluqman.78@gmail.com" />
-              {xs ? (
-                <InputRightElement width="max-content">
-                  <Button
-                    size="lg"
-                    onClick={() => {}}
-                    color="white"
-                    backgroundColor="#5B67C9"
-                    _hover={{
-                      backgroundColor: "#6f8bfb"
-                    }}
-                  >
-                    <Text fontSize="sm" letterSpacing={0.5}>
-                      STAY IN THE LOOP
-                    </Text>
-                  </Button>
-                </InputRightElement>
-              ) : (
+          <InputGroup
+            size="lg"
+            boxShadow={xs ? "0px 15px 35px #1A233F1A;" : "none"}
+            width={xs ? "80%" : "100%"}
+            flexDirection={{ lg: "row", xs: "column" }}
+            backgroundColor={"transparent"}
+            color={"transparent"}
+            mt={16}
+          >
+            <Input placeholder="umarluqman.78@gmail.com" />
+            {xs ? (
+              <InputRightElement width="max-content">
                 <Button
                   size="lg"
                   onClick={() => {}}
@@ -140,24 +118,44 @@ const Index = props => {
                   _hover={{
                     backgroundColor: "#6f8bfb"
                   }}
-                  mt={3}
+                  _active={{
+                    backgroundColor: "#6f8bfb"
+                  }}
                 >
                   <Text fontSize="sm" letterSpacing={0.5}>
                     STAY IN THE LOOP
                   </Text>
                 </Button>
-              )}
-            </InputGroup>
-          </Box>
+              </InputRightElement>
+            ) : (
+              <Button
+                size="lg"
+                onClick={() => {}}
+                color="white"
+                backgroundColor="#5B67C9"
+                _hover={{
+                  backgroundColor: "#6f8bfb"
+                }}
+                mt={3}
+                _active={{
+                  backgroundColor: "#6f8bfb"
+                }}
+              >
+                <Text fontSize="sm" letterSpacing={0.5}>
+                  STAY IN THE LOOP
+                </Text>
+              </Button>
+            )}
+          </InputGroup>
         </Box>
       </Flex>
-      <Flex backgroundColor="#4652AF" py={16} fullWidth justify="center">
+      <Flex backgroundColor="#4652AF" py={16} fullWidth justify="center" px={8}>
         <Box maxWidth="54rem">
           <Text fontSize="2xl" color="white" mb={6}>
             Details we're sweating
           </Text>
-          <Grid templateColumns="1fr 1fr" gap={12}>
-            <Grid alignItems="center" gridTemplateColumns="48px 22rem" gap={8}>
+          <SimpleGrid columns={[1, 1, 2]} spacing={12}>
+            <Grid alignItems="center" gridTemplateColumns="3.5rem 1fr" gap={8}>
               <Control />
               <Box>
                 <Text fontSize="lg" color="white">
@@ -169,7 +167,7 @@ const Index = props => {
                 </Text>
               </Box>
             </Grid>
-            <Grid alignItems="center" gridTemplateColumns="48px 20rem" gap={8}>
+            <Grid alignItems="center" gridTemplateColumns="3.5rem 1fr" gap={8}>
               <Latency />
               <Box>
                 <Text fontSize="lg" color="white">
@@ -181,7 +179,7 @@ const Index = props => {
                 </Text>
               </Box>
             </Grid>
-            <Grid alignItems="center" gridTemplateColumns="48px 20rem" gap={8}>
+            <Grid alignItems="center" gridTemplateColumns="3.5rem 1fr" gap={8}>
               <CommandLine />
               <Box>
                 <Text fontSize="lg" color="white">
@@ -193,7 +191,7 @@ const Index = props => {
                 </Text>
               </Box>
             </Grid>
-            <Grid alignItems="center" gridTemplateColumns="48px 20rem" gap={8}>
+            <Grid alignItems="center" gridTemplateColumns="3.5rem 1fr" gap={8}>
               <Plugin />
               <Box>
                 <Text fontSize="lg" color="white">
@@ -204,17 +202,22 @@ const Index = props => {
                 </Text>
               </Box>
             </Grid>
-          </Grid>
+          </SimpleGrid>
         </Box>
       </Flex>
-      <Flex backgroundColor="#1F2E41" py={16} fullWidth justify="center">
+      <Flex backgroundColor="#1F2E41" py={16} fullWidth justify="center" px={8}>
         <Box maxWidth="54rem">
           <Text fontSize="2xl" color="white" mb={6}>
             Frequently asked questions
           </Text>
           <Box borderTop="1px solid #2A4257" pt={3} mb={12}>
-            <Grid templateColumns="20rem 40rem" gap={0}>
-              <Text fontSize="lg" color="white">
+            <Grid templateColumns="20rem 1fr" gap={0}>
+              <Text
+                fontSize="lg"
+                color="white"
+                pb={3}
+                css={{ gridColumn: xs ? "unset" : "span 2" }}
+              >
                 What exactly are you making?
               </Text>
               <Text color="#C8F2FF" lineHeight={2}>
@@ -230,8 +233,13 @@ const Index = props => {
           </Box>
 
           <Box borderTop="1px solid #2A4257" pt={3} mb={12}>
-            <Grid templateColumns="20rem 40rem" gap={0}>
-              <Text fontSize="lg" color="white">
+            <Grid templateColumns="20rem auto" gap={0}>
+              <Text
+                fontSize="lg"
+                color="white"
+                css={{ gridColumn: xs ? "unset" : "span 2" }}
+                pb={3}
+              >
                 And who are you guys?
               </Text>
               <Text color="#C8F2FF" lineHeight={2}>
@@ -241,8 +249,13 @@ const Index = props => {
             </Grid>
           </Box>
           <Box borderTop="1px solid #2A4257" pt={3} mb={12}>
-            <Grid templateColumns="20rem 40rem" gap={0}>
-              <Text fontSize="lg" color="white">
+            <Grid templateColumns="20rem auto" gap={0}>
+              <Text
+                fontSize="lg"
+                color="white"
+                css={{ gridColumn: xs ? "unset" : "span 2" }}
+                pb={3}
+              >
                 What's next?
               </Text>
               <Text color="#C8F2FF" lineHeight={2}>
@@ -251,8 +264,13 @@ const Index = props => {
             </Grid>
           </Box>
           <Box borderTop="1px solid #2A4257" pt={3} mb={12}>
-            <Grid templateColumns="20rem 40rem" gap={0}>
-              <Text fontSize="lg" color="white">
+            <Grid templateColumns="20rem auto" gap={0}>
+              <Text
+                fontSize="lg"
+                color="white"
+                css={{ gridColumn: xs ? "unset" : "span 2" }}
+                pb={3}
+              >
                 Can I get in the alpha?
               </Text>
               <Text color="#C8F2FF" lineHeight={2}>

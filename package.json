@@ -12,10 +12,12 @@
     "@emotion/core": "^10.0.27",
     "@emotion/styled": "^10.0.27",
     "@svgr/webpack": "^5.1.0",
+    "emotion": "^10.0.27",
+    "emotion-server": "^10.0.27",
     "emotion-theming": "^10.0.27",
     "next": "^9.1.7",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-media-hook": "^0.4.4"
+    "use-media": "^1.4.0"
   }
 }
