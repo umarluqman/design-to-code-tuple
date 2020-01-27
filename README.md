@@ -2,7 +2,7 @@
 
 ### From Sketch file to a responsive Next.JS static HTML site
 
-This is inspired by Steve Schoger [Youtube video](https://youtu.be/RC9cYdbQ-_c) where he shared how he refactored this website. https://tuple.app
+This is inspired by Steve Schoger [Youtube video](https://youtu.be/RC9cYdbQ-_c) where he shared how he refactored https://tuple.app back in 2018.
 
 Stacks:
 
@@ -14,5 +14,3 @@ The design is based on his [Sketch file](https://www.dropbox.com/s/tictbuvpnzxpf
 And I uploaded it to a shareable Adobe XD link so everyone can see, [here](https://xd.adobe.com/view/d5a08ff6-9c2e-45a2-4108-63525216d89a-a391/)
 
 Live demo -> https://tuple.derezzed78.now.sh/
-
-Disclaimer: _This is video the refactored version of Tuple old website._
