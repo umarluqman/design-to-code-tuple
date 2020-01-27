@@ -1,48 +1,16 @@
-# Example app with [chakra-ui](https://github.com/chakra-ui/chakra-ui)
+# Design to code series
 
-This example features how to use [chakra-ui](https://github.com/chakra-ui/chakra-ui) as the component library within a Next.js app.
+### From Sketch file to Next.JS static HTML
 
-We are connecting the Next.js `_app.js` with `chakra-ui`'s Theme and ColorMode containers so the pages can have app-wide dark/light mode. We are also creating some components which shows the usage of `chakra-ui`'s style props.
+This is inspired by Steve Schoger [Youtube video](https://youtu.be/RC9cYdbQ-_c) where he shared how he refactored this website. https://tuple.app
 
-## Deploy your own
+Stacks:
 
-Deploy the example using [ZEIT Now](https://zeit.co/now):
+- Next.JS
+- Chakra-UI
 
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/next.js/tree/canary/examples/with-chakra-ui)
+The design is based on his [Sketch file](https://www.dropbox.com/s/tictbuvpnzxpf7v/tuple-after.sketch?dl=0)
 
-## How to use
+And I uploaded it to a shareable Adobe XD link so everyone can see, [here](https://xd.adobe.com/view/d5a08ff6-9c2e-45a2-4108-63525216d89a-a391/)
 
-### Using `create-next-app`
-
-Execute [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npm init next-app --example with-chakra-ui with-chakra-ui-app
-# or
-yarn create next-app --example with-chakra-ui with-chakra-ui-app
-```
-
-### Download manually
-
-Download the example:
-
-```bash
-curl https://codeload.github.com/zeit/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/with-chakra-ui
-cd with-chakra-ui
-```
-
-Install it and run:
-
-```bash
-npm install
-npm run dev
-# or
-yarn
-yarn dev
-```
-
-Deploy it to the cloud with [now](https://zeit.co/now) ([download](https://zeit.co/download)):
-
-```bash
-now
-```
+Live demo -> https://tuple.derezzed78.now.sh/
